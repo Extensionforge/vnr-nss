@@ -179,7 +179,7 @@ function callApi($user_id)
       if($hasSubscriptions>0){
       	// wenn abos da dann
       	 update_user_meta( $user_id, 'bp_verified_member', "1" );	
-     $testo = $wpdb->insert("wp_tests", array('task' => 'vip', 'value' => 'yes'), array('%s') );
+      $testo = $wpdb->insert("wp_tests", array('task' => 'vip', 'value' => 'yes'), array('%s') );
       } else { update_user_meta( $user_id, 'bp_verified_member', "" );
       $testo = $wpdb->insert("wp_tests", array('task' => 'vip', 'value' => 'no'), array('%s') );	 }
 
@@ -408,7 +408,6 @@ class Vnr_Nss {
 		 * core plugin.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-vnr-nss-loader.php';
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/service.php';
 
 
 		/**
