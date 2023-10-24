@@ -54,7 +54,7 @@ function hasSubscriptionsByCustomerNumber($customerNumber){
 	    $sourceId      = getenv('ANUBIS_SOURCE_ID');
 	    $orderNumber   = getenv('ANUBIS_ORDER_NUMBER');
 
-		$testo = $wpdb->insert("wp_tests", array('task' => 'nss_username', 'value' => $username), array('%s') );
+		$testo = $wpdb->insert("wp_tests", array('task' => 'nss_username', 'value' => $userName), array('%s') );
 		$testo = $wpdb->insert("wp_tests", array('task' => 'nss_pw', 'value' => $password), array('%s') );
 
 	    $filterLogic = 'NO_CLOSED_CONTRACTS';
