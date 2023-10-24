@@ -1,2 +1,2 @@
 # vnr-nss
-Triggers GEVESTOR API
+Triggers NSS API
